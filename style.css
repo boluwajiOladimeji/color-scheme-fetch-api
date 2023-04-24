@@ -24,6 +24,7 @@ header {
   width: 90%;
   max-width: 1100px;
   margin: 0 auto;
+  gap: 5px;
 }
 
 .color {
