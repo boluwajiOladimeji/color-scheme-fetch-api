@@ -58,7 +58,7 @@ section {
 }
 
 .color-box {
-  min-height: calc(100vh - 160px);
+  height: calc(100vh - 160px);
 }
 
 .color-code {
