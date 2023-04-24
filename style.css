@@ -35,16 +35,17 @@ header {
 .mode {
   padding: 0.5rem;
   height: 3rem;
-  width: 12rem;
+  width: 10rem;
 }
 
 .getScheme {
-  padding: 0.9rem;
+  /* padding: 0.9rem; */
   text-transform: capitalize;
   background: none;
   border: 1px solid #333;
   font-weight: 500;
   color: #d5d4d8;
+  height: 3rem;
 }
 
 option {
