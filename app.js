@@ -45,7 +45,6 @@ const renderColors = function (datas) {
     `;
     })
     .join('');
-  console.log(html);
   colorContainer.innerHTML = html;
 };
 
@@ -53,4 +52,11 @@ btnColor.addEventListener('click', async () => {
   const data = await getColorScheme();
   //   console.log(data.colors);
   renderColors(data.colors);
+});
+
+colorContainer.addEventListener('click', (e) => {
+  const element = e.target.closest('.color-box');
+  navigator.clipboard.writeText(element.dataset.color);
+  console.log(element);
+  alert(`copied ${element.dataset.color} to clipboard`);
 });
