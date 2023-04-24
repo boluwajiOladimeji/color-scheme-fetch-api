@@ -39,7 +39,7 @@ const renderColors = function (datas) {
     .map((data) => {
       return `
             <figure>
-          <div class="color-box color-0" style="background-color : ${data.hex.value}"></div>
+          <div class="color-box color-0" style="background-color : ${data.hex.value}" data-color="${data.hex.value}"></div>
           <div class="color-code"><p>${data.hex.value}</p></div>
         </figure>
     `;
