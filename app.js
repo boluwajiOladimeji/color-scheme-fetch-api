@@ -54,9 +54,11 @@ btnColor.addEventListener('click', async () => {
   renderColors(data.colors);
 });
 
-colorContainer.addEventListener('click', (e) => {
-  const element = e.target.closest('.color-box');
-  navigator.clipboard.writeText(element.dataset.color);
-  console.log(element);
-  alert(`copied ${element.dataset.color} to clipboard`);
-});
+// Copy to Clipboard
+
+// colorContainer.addEventListener('click', (e) => {
+//   const element = e.target.closest('.color-box');
+//   navigator.clipboard.writeText(element.dataset.color);
+//   console.log(element);
+//   alert(`copied ${element.dataset.color} to clipboard`);
+// });
